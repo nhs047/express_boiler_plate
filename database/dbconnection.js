@@ -7,7 +7,7 @@ module.exports = {
 
 async function connect() {
   const atlasUri =
-    'mongodb+srv://ghuronti:ghuronti123@ghutoti-0zh1j.mongodb.net/ghurontidb?retryWrites=true&w=majority';
+    'DBURI';
   if (mongoose.connection.readyState === 0) {
     return await mongoose.connect(atlasUri, {
       useNewUrlParser: true,
